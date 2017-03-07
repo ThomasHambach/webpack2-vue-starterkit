@@ -20,7 +20,7 @@ module.exports = {
         publicPath: '/'
     },
 	resolve: {
-		extensions: ['.js', '.scss'],
+		extensions: ['.ts', '.js', '.scss'],
 		modules: [path.resolve('./src/js'), path.resolve('node_modules')],
 		alias: {
 			'vue$': 'vue/dist/vue.common'
@@ -51,6 +51,10 @@ module.exports = {
 				test: /\.html$/,
 				loader: 'html-loader'
 			},
+			{ 
+				test: /\.(ts|tsx)?$/, 
+				loader: "ts-loader" 
+			},
 			{
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
@@ -73,6 +77,10 @@ module.exports = {
 					fallbackLoader: 'style-loader',
 					loader: 'css-loader!sass-loader!resolve-url-loader'
 				})
+			},
+			{
+				test: /\.(ttf|eot|woff|woff2|svg)$/,
+				loader: 'file-loader?name=.[name].[ext]'
 			},
 			
 		]
