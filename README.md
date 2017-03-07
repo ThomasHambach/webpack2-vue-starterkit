@@ -1,6 +1,6 @@
 # Vue + Webpack 2 Starterkit
 
-*This is a very basic example on how to use Webpack 2 with Vue*
+*This is a very basic example on how to use Webpack 2 with Vue and PUG.*
 
 ### Quick start
 **Make sure you have Node version >= 5.0 and NPM >= 3**
@@ -39,7 +39,7 @@ hotel-portal
 ├──src                  * All the source files
 |   ├──css              * SASS files, these will be compiled during the build process
 |   ├──js               * JavaScript source files
-|   ├──index.html       * Our index.html page
+|   ├──index.pug        * Our index.pug page
 |   └──index.js         * Bootstrap JavaScript file, mostly used as the root voor webpack
 |
 ├──webpack              * Webpack config files
