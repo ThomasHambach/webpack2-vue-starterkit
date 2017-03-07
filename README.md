@@ -1,4 +1,4 @@
-# Vue + Webpack 2 Starterkit
+# Vue + TypeScript + Webpack 2 Starterkit
 
 *This is a very basic example on how to use Webpack 2 with Vue and PUG.*
 
