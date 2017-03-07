@@ -34,7 +34,9 @@
     "style-loader": "^0.13.1",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.2.0",
-    "webpack-merge": "^2.4.0"
+    "webpack-merge": "^2.4.0",
+    "pug": "^2.0.0-beta11",
+    "pug-loader": "^2.3.0"
   },
   "dependencies": {
     "vue": "^2.1.10"
