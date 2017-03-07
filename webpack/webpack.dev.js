@@ -21,8 +21,9 @@ module.exports = function() {
 		},
 		plugins: [
 			new HtmlWebpackPlugin({
-				template: path.resolve(config.src, 'index.html'),
-				hash: true
+				filetype: 'pug',
+				filename: 'index.html',
+				template: path.resolve(config.src, 'index.pug'),
 			})
 		]
 	});
