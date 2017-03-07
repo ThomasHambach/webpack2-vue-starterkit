@@ -44,6 +44,10 @@ module.exports = {
     module: {
 		rules: [
 			{
+				test: /\.pug$/,
+				loader: 'pug-loader',
+			},
+			{
 				test: /\.html$/,
 				loader: 'html-loader'
 			},
@@ -67,9 +71,10 @@ module.exports = {
 				exclude: /node_modules/,
 				loader: ExtractTextWebpackPlugin.extract({
 					fallbackLoader: 'style-loader',
-					loader: 'css-loader!sass-loader'
+					loader: 'css-loader!sass-loader!resolve-url-loader'
 				})
-			}
+			},
+			
 		]
     }
 }
