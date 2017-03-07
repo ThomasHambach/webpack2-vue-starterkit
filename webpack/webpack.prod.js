@@ -16,7 +16,7 @@ module.exports = function() {
 	return webpackMerge(webpackBase, {
 		plugins: [
 			new HtmlWebpackPlugin({
-				template: path.resolve(config.src, 'index.html'),
+				template: path.resolve(config.src, 'index.pug'),
 				hash: true,
 				minify: {
 					collapseWhitespace: true,
