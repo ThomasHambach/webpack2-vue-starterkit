@@ -40,7 +40,7 @@ hotel-portal
 |   ├──css              * SASS files, these will be compiled during the build process
 |   ├──js               * JavaScript source files
 |   ├──index.pug        * Our index.pug page
-|   └──index.js         * Bootstrap JavaScript file, mostly used as the root voor webpack
+|   └──index.ts         * Bootstrap TypeScript file, mostly used as the root voor webpack
 |
 ├──webpack              * Webpack config files
 |   ├──config.js        * General config files, like directories
